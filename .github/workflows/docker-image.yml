@@ -14,5 +14,5 @@ jobs:
       - name: Build and push production images
         uses: docker/build-push-action@v5
         with:
-          tags: chg86/bkci-docker:v1.0.3
+          tags: chg86/bkci-docker:v1.0.4
           push: true
