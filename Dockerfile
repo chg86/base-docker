@@ -7,7 +7,7 @@ RUN sh get-docker.sh
 
 RUN docker --help
 
-RUN systemctl start docker
+RUN service docker start
 
 ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
