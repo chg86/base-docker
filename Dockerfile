@@ -1,6 +1,7 @@
 FROM bkci/ci:alpine
 RUN apt update -y
 RUN apt install -y git python3 gcc g++ make clang cmake
+
 RUN apt install -y docker-ce docker-ce-cli containerd.io
 RUN docker --help
 ENV LANG=C.UTF-8
