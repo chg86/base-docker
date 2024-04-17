@@ -7,7 +7,11 @@ RUN sh get-docker.sh
 
 RUN docker --help
 
-RUN /usr/bin/dockerd &
+RUN systemctl start docker
+RUN systemctl status docker
+RUN docker run hello-world
+RUN docker images
+
 
 ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
